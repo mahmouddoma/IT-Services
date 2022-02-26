@@ -8,7 +8,6 @@
  }
  body{
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
  }   
 html {
     scroll-behavior: smooth;
@@ -18,6 +17,12 @@ html {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+@media (max-width: 700px){
+    .container{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
 }
  /* Small */
  @media (min-width: 768px) {
@@ -128,7 +133,7 @@ html {
     font-weight: 900;
     z-index: 1;
     font-family: 'Roboto Serif', sans-serif;
-    text-shadow: #333;
+    text-shadow: 5px rgba(0,0,0,0.2);
 }
 .IT-section .intro-text h1{
     color: rgb(255, 253, 253);
@@ -192,7 +197,7 @@ html {
     position: relative;
     border: 1px solid rgb(226, 218, 218);
     border-radius: 15px;
-    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 .section2 .container{
     position: relative;
@@ -210,7 +215,7 @@ html {
    font-size: 25px;
    width: 310px;
    font-family: 'PT Sans Narrow', sans-serif;
-   text-shadow: 2px 1px rgb(102, 100, 100);
+   text-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
 }
 .section2 .container .btn{
@@ -273,12 +278,12 @@ html {
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 100px;
+    padding: 110px;
 }
 .services-col h1{
     font-family: 'PT Sans Narrow', sans-serif;
     color: black;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
 }
 .services-col p{
@@ -307,8 +312,8 @@ html {
 }
 .services-col .ser-col{
     background: #f6f6f6;
-    width: 240px;
-    height: 325px;
+    width: 235px;
+    height: 350px;
     text-align: center;
     margin: 5%;
     border-radius: 10px;
@@ -322,7 +327,7 @@ html {
     top: -28px;
 }
 .services-col .ser-col .btn{
-    background-color: rgb(68, 68, 196);
+    background-color: rgb(85, 85, 199);
     border: none;
     color: white;
     padding: 7px 32px;
@@ -338,4 +343,312 @@ html {
 .services-col .ser-col .btn:hover{
     filter: brightness(150%);
 }
+@media (max-width: 800px){
+    .services-col{
+        height: 100%;
+        padding: 82%;
+        width: 100%;
+    }
+}
+@media (max-width: 800px){
+    .services-col
+    .card-container{
+        margin-left: 0px;
+        margin-right: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
 /* End Services */
+/* Start About US */
+.about{
+    width: 100%;
+    margin: auto;
+    padding: 40px 100px;
+    background: #ddd;
+}
+.about .Btn{
+    margin-left: -59px;
+    margin-bottom: -39px;
+    
+}
+.about .btn-1, .btn-2, .btn-3{
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    background-color: rgb(85, 85, 199);
+    color: white;
+    padding: 7px 32px;
+    border-radius: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.about .container {
+    background-size: cover;
+    align-items: center;
+    margin-top: 3%;
+    border-radius: 0;
+    margin-bottom: 5%;
+    padding: 25px;
+    background-color: #f6f6f6;
+    width: 780px;
+    margin-left: -57px;
+ }
+.main-heading h2{
+    width: 300px;
+    max-width: 100%;
+    padding: 0;
+    top: 100%;
+    margin-left: -5%;
+    margin-top: -5%;
+    font-weight: 400;
+}
+.main-heading .container h3{
+    content: "";
+    font-size: 20px;
+    font-weight: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    width: 600px;
+}
+.main-heading .container h4{
+    content: "";
+    font-size: 16px;
+    font-weight: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    margin-top: 18px;
+}
+.main-heading .container h5{
+    content: "";
+    font-size: 16px;
+    font-weight: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    margin-top: 18px;
+}
+/* End About US */
+/* Start Testimonials */
+.testimonials{
+    width: 100%;
+    margin: auto;
+    padding: 40px 100px;
+    background: #f6f6f6;
+}
+.testimonials .container{
+    margin-left: 55px;
+}
+.testimonials h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 45px;
+}
+.testimonials p{
+    margin-top: 30px;
+    width: 435px;
+    line-height: 36px;
+    font-weight: initial;
+    margin: 10 0 20px;
+    text-align: center;
+    margin-left: -60px;
+}
+.testimonials img{
+    width: 270px;
+    height: 270px;
+    margin-top: 35px;
+}
+.testimonials0{
+    content: "";
+    width: 45%;
+    margin: auto;
+    padding: 40px 100px;
+    background: #ddd;
+    background-size: cover;
+    align-items: center;
+    margin-top: -43%;
+    border-radius: 0;
+    margin-bottom: 5%;
+    padding: 25px;
+    margin-left: 553px;
+}
+.testimonials0 img{
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: 75px;
+    margin-bottom: -81px;
+}
+.testimonials0 p{
+    margin-top: 85px;
+    width: 450px;
+    line-height: 68px;
+    font-weight: inherit;
+    margin: 10 0 20px;
+    margin-left: 0;
+    text-align: left;
+}
+/* End Testimonials */
+/* Start Team */
+.team{
+    background: rgb(90, 86, 86);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 110px;
+}
+.team h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    color: #ddd;
+    font-weight: 600;
+    font-size: 30px;
+}
+.team .container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+}
+.team .img-team{
+    background: #f6f6f6;
+    width: 455px;
+    height: 285px;
+    text-align: center;
+    margin: 5%;
+    border-radius: 10px;
+}
+.team .img-team p{
+    content: "";
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.team .img-team h2{
+    content: "";
+    color: rgb(26, 26, 224);
+    font-size: 14px;
+    font-weight: 400;
+    width: inherit;
+    margin-left: -16%;
+    margin-top: -12%;
+}
+.team .container img{
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    margin-left: -80%;
+}
+.team .img-team i{
+    content: "";
+    top: 20%;
+    width: 60px;
+    color: rgb(53, 53, 204);
+}
+/* End Team */
+/* Start Contact Us */
+.contact{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background: #f6f6f6;
+}
+.contact .address p{
+   margin-left: 30%;
+   width: 34%;
+   margin-top: 0;
+
+}
+.contact .address .par{
+    content: "";
+    width: 34%;
+    margin-top: 2%;
+}
+.contact .address hr{
+    width: 7%;
+    margin-left: 45%;
+    height: 5px;
+    background-color: rgb(53, 53, 204);
+    margin-top: 1%;
+}
+.contact-us{
+    margin: auto;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    font-family: "Montserrat", sans-serif;
+} 
+.contact-from{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/contect.jfif);
+}
+.contact-us h1{
+    margin-top: 0;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    color: #ddd;
+}
+.input{
+    border: 1px solid rgb(226, 221, 221);
+    margin: 8px 230px;
+    padding: 11px 27px;
+    border-radius: 8px;
+}
+.input label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.input input,
+.input textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+
+}
+.btns{
+    display: block;
+    background: rgb(53, 53, 204);
+    padding: 14px 0px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0% 44%;
+    border-radius: 8px;
+    text-decoration: none;
+}
+/* End Contact Us */
