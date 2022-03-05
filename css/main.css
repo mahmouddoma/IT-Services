@@ -121,6 +121,13 @@ html {
 .header .links ul li:not(:last-child) a{
     border-bottom: 1px solid #ddd;
 }
+@media(min-width: 700px){
+    .header .container{
+        font-size: 20px;
+        width: 100%;
+        margin: 0;
+    }
+}
 /* End Header */
 /* Start section1 */
 .IT-section .intro-text{
@@ -147,6 +154,15 @@ html {
     height: 172px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
+}
+@media(max-width: 700px){
+    .IT-section .intro-text h1, p{
+        font-size: 30px;
+        font-weight: inherit;
+    }
+    .IT-section .intro-text p{
+        width: 240px;
+    }
 }
 /* End section1 */
 /* Start Features */
@@ -266,9 +282,29 @@ html {
     font-family: 'PT Sans Narrow', sans-serif;
     text-shadow: none;
 }
-@media screen and (max-width: 992px) {
-    .section2 {
-      width: 50%;
+@media(max-width: 700px){
+    .section2{
+        width: 50%;
+    }
+    .section2 .text1 p {
+        width: 180px;
+    }
+    .section2 .imgbx img{
+        margin-left: 269px;
+        width: 145%;
+    }
+    .section2 .container .text2 h2{
+        margin-left: 159px;
+    margin-top: -189px;
+    width: 200px;
+    font-size: 15px;
+    }
+    .section2 .container .text2 p {
+        margin-left: 156px;
+        margin-top: -4px;
+        width: 200px;
+        height: 67px;
+        font-size: 15px;
     }
 }
 /* End Section2 */
@@ -343,20 +379,20 @@ html {
 .services-col .ser-col .btn:hover{
     filter: brightness(150%);
 }
-@media (max-width: 800px){
+@media (max-width: 700px){
     .services-col{
         height: 100%;
         padding: 82%;
-        width: 100%;
+        width: 110%;
     }
-}
+    .services-col h1{
+        margin-top: 200px;
+    }
 @media (max-width: 800px){
     .services-col
     .card-container{
-        margin-left: 0px;
-        margin-right: 15px;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        grid-template-columns: repeat(2, 0fr);
+        padding: 0px;
     }
 }
 /* End Services */
@@ -487,7 +523,7 @@ html {
 }
 .testimonials0 p{
     margin-top: 85px;
-    width: 450px;
+    width: 449px;
     line-height: 68px;
     font-weight: inherit;
     margin: 10 0 20px;
@@ -619,7 +655,7 @@ html {
     color: #ddd;
 }
 .input{
-    border: 1px solid rgb(226, 221, 221);
+    border: 1px solid rgb(97, 93, 93);
     margin: 8px 230px;
     padding: 11px 27px;
     border-radius: 8px;
@@ -651,4 +687,4 @@ html {
     border-radius: 8px;
     text-decoration: none;
 }
-/* End Contact Us */
+/* End Contact Us*/
