@@ -349,7 +349,7 @@ html {
 .services-col .ser-col{
     background: #f6f6f6;
     width: 235px;
-    height: 350px;
+    height: 325px;
     text-align: center;
     margin: 5%;
     border-radius: 10px;
@@ -381,14 +381,8 @@ html {
 }
 @media (max-width: 700px){
     .services-col{
-        height: 100%;
-        padding: 82%;
-        width: 110%;
+        margin: 0;
     }
-    .services-col h1{
-        margin-top: 200px;
-    }
-@media (max-width: 800px){
     .services-col
     .card-container{
         grid-template-columns: repeat(2, 0fr);
@@ -675,7 +669,6 @@ html {
     outline: none;
     font-size: 18px;
     margin-top: 6px;
-
 }
 .btns{
     display: block;
@@ -687,4 +680,4 @@ html {
     border-radius: 8px;
     text-decoration: none;
 }
-/* End Contact Us*/
+/* End Contact Us */
