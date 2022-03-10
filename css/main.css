@@ -121,7 +121,11 @@ html {
 .header .links ul li:not(:last-child) a{
     border-bottom: 1px solid #ddd;
 }
-@media(min-width: 700px){
+@media (max-width: 640px){
+    .header{
+        left: 0px;
+        margin-left: 0px;
+    }
     .header .container{
         font-size: 20px;
         width: 100%;
@@ -160,8 +164,12 @@ html {
         font-size: 30px;
         font-weight: inherit;
     }
+    .IT-section .intro-text h1{
+        margin-top: 300%;
+    }
     .IT-section .intro-text p{
         width: 240px;
+        color: cornsilk;
     }
 }
 /* End section1 */
@@ -197,9 +205,19 @@ html {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
 }
-@media screen and (min-width:600px){
+@media screen and (max-width :640px){
+    .features {
+        width: 100%;
+    }
     .features .container .box{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 5fr);
+    margin-left: -7px;
+    margin-right: -18px;
+    width: 110%;
+    }
+    .features .container p{
+        font-size: 16px;
+
     }
 }
 /* End Features */
@@ -248,9 +266,6 @@ html {
     cursor: pointer;
     border-radius: 20%
 }
-.section2 .container .btn:hover{
-    filter: brightness(150%);
-}
 .section2 .imgbx img{
     position: absolute;
     top: 9%;
@@ -282,29 +297,31 @@ html {
     font-family: 'PT Sans Narrow', sans-serif;
     text-shadow: none;
 }
-@media(max-width: 700px){
+@media(max-width: 640px){
     .section2{
-        width: 50%;
+        width: auto;
+    height: 680px;
     }
-    .section2 .text1 p {
+    .section2 .container .text1 p {
         width: 180px;
+        margin-top: -150%;
     }
     .section2 .imgbx img{
-        margin-left: 300px;
         width: 100%;
+    margin-left: -26%;
+    margin-top: 30%;
     }
     .section2 .container .text2 h2{
-        margin-left: 230px;
-    margin-top: -189px;
-    width: 200px;
-    font-size: 15px;
+        margin-left: -280%;
+        font-size: 15px;
+        margin-top: 1050%;
     }
     .section2 .container .text2 p {
-        margin-left: 225px;
+        margin-left: -280%;
         margin-top: -4px;
-        width: 200px;
-        height: 67px;
-        font-size: 15px;
+        width: 220px;
+        height: 70px;
+        font-size: 14px;
     }
 }
 /* End Section2 */
@@ -379,20 +396,26 @@ html {
 .services-col .ser-col .btn:hover{
     filter: brightness(150%);
 }
-@media (max-width: 700px){
+@media (max-width: 640px){
     .services-col{
         margin: 0;
+    padding: 172px;
     }
     .services-col h1{
         font-size: 14px;
-        margin-top: -80px;
+    margin-top: -80px;
+    margin-left: -70px;
+    width: 155px;
     }
     .services-col p{
         font-size: 12px;
+    width: 300px;
+    margin-left: -135px;
     }
     .services-col .ser-col{
         width: 150px;
-        height: 245px;
+    height: 245px;
+    margin-left: -10%;
     }
     .services-col .ser-col img{
         width: 40px;
@@ -403,9 +426,10 @@ html {
         font-size: 14px;
         margin-top: -35px;
     }
-    .services-col .ser-col p{
+    .services-col .card-container .ser-col p{
         font-size: 5px;
-        width: 155px;
+    width: 100%;
+    margin-left: auto;
     }
     .services-col .ser-col .btn{
         font-size: 5px;
@@ -416,8 +440,8 @@ html {
         grid-template-columns: repeat(2, 0fr);
         margin: 6px 0px;
         column-count: 5;
-        column-gap: 50px;
-    }
+        column-gap: 25px;
+        }
 }
 /* End Services */
 /* Start About US */
@@ -493,19 +517,23 @@ html {
     width: 500px;
     margin-top: 18px;
 }
-@media (max-width: 700px){
+@media (max-width: 640px){
     .main-heading h2{
         font-size: 15px;
     margin-top: -85px;
     margin-left: -55px;
     }
     .about .btn-1, .btn-2, .btn-3{
-        font-size: 11px;
-    padding: 8px 12px;
+        font-size: 7px;
+        padding: 5px 18px;
+    }
+    .about .Btn{
+        display: flex;
     }
     .about .container {
         padding: 8%;
-    width: 330px;
+    width: 295px;
+    margin-top: 20%;
     }
     .main-heading .container h3{
         font-size: 13px;
@@ -581,35 +609,40 @@ html {
     margin-left: 0;
     text-align: left;
 }
-@media (max-width: 700px){
+@media (max-width: 640px){
     .testimonials h1{
         font-size: 20px;
-        margin-left: 15px;
+        margin-left: -45px;
     }
     .testimonials p {
-   font-size: 15px;
-    width: 330px;
-    margin-top: 65px;;
+        margin-left: -405%;
+        font-size: 15px;
+        width: 330px;
+        margin-top: 30px;
     }
     .testimonials img {
         width: 160px;
-    height: 160px;
+        height: 160px;
+        margin-left: -170%;
     }
     .testimonials0{
-        width: 100%;
-        margin-left: 20px;
-        padding: 0 33px;
+        width: 171%;
+        margin-left: 0px;
+        padding: 0 0px;
         margin-top: 20px;
     }
     .testimonials0 img {
         width: 70px;
-    height: 65px;
-    margin-top: 0;
+        height: 65px;
+        margin-top: 0;
+        margin-left: 20%;
     }
+
     .testimonials0 p {
-        font-size: 15px;
-        width: 330px;
+        font-size: 11px;
+        width: 195px;
         margin-top: 65px;
+        margin-left: 20%;
     } 
 }
 /* End Testimonials */
@@ -690,15 +723,14 @@ html {
         margin-left: -65px;
     }
     .team .container{
-        grid-template-columns: repeat(2, 5fr);
-        margin-top: -6%;
-        margin-left: -50px;
-        column-count: 5;
-        column-gap: 30px;
+        height: 200%;
+    grid-template-columns: repeat(1, 5fr);
+    margin-top: -6%;
+    margin-left: 0;
+    column-gap: 30px;
     }
     .team .img-team{
         width: 100%;
-        height: 85%;
 
     }
     .team .container img{
@@ -706,7 +738,7 @@ html {
         height: 20%;
     }
     .team .img-team h2{
-        margin-left: -40px;
+        margin-left: -20px;
         margin-top: -40px;
     }
     .team .img-team p{
@@ -801,15 +833,16 @@ html {
     border-radius: 8px;
     text-decoration: none;
 }
-@media (max-width: 700px){
+@media (max-width: 640px){
     .contact .address p{
-        text-align: center;
-        width: 260px;
-        margin-top: -80px;
+        margin-left: 10%;
+    text-align: center;
+    width: 260px;
+    margin-top: -80px;
     }
     .contact .address hr{
-        width: 15%;
-        margin-left: 41%;
+        width: 30%;
+    margin-left: 33%;
     }
     .contact-us{
         width: 100%;
@@ -819,15 +852,15 @@ html {
         font-size: 35px;
     }
     .input{
-        margin: 10px 110px;
+        margin: 10px 5px;
     }
     .btns{
-        margin: 0px 40%;
+        margin: 0px 25%;
 
     }
     .contact .address .par{
-        margin-left: 25%;
-       width: 300px;
+        margin-left: 5%;
+        width: 300px;
     }
 }
 /* End Contact Us */
